@@ -97,17 +97,27 @@
     <comp lib="0" loc="(190,1820)" name="Tunnel">
       <a name="label" val="Halt"/>
     </comp>
+    <comp lib="0" loc="(270,1680)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clk"/>
+    </comp>
+    <comp lib="1" loc="(290,1630)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
     <comp lib="12" loc="(710,920)" name="CP0"/>
     <comp lib="14" loc="(690,100)" name="control_unit"/>
     <comp lib="2" loc="(140,1800)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="selloc" val="tr"/>
     </comp>
-    <comp lib="2" loc="(160,1350)" name="Multiplexer"/>
-    <comp lib="2" loc="(160,1450)" name="Multiplexer"/>
+    <comp lib="2" loc="(250,1490)" name="Multiplexer"/>
+    <comp lib="2" loc="(280,1580)" name="Multiplexer">
+      <a name="facing" val="north"/>
+    </comp>
     <wire from="(130,1830)" to="(130,1920)"/>
     <wire from="(140,1750)" to="(140,1800)"/>
     <wire from="(150,1830)" to="(150,1880)"/>
     <wire from="(160,1820)" to="(190,1820)"/>
+    <wire from="(270,1610)" to="(270,1680)"/>
   </circuit>
 </project>

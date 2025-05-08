@@ -114,6 +114,9 @@
     <comp lib="2" loc="(280,1580)" name="Multiplexer">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="4" loc="(130,1550)" name="Register">
+      <a name="appearance" val="classic"/>
+    </comp>
     <wire from="(130,1830)" to="(130,1920)"/>
     <wire from="(140,1750)" to="(140,1800)"/>
     <wire from="(150,1830)" to="(150,1880)"/>

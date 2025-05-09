@@ -131,6 +131,11 @@
       <a name="facing" val="east"/>
       <a name="label" val="Clk"/>
     </comp>
+    <comp lib="0" loc="(1580,1100)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ALUSrc"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1580,1790)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ExpSrc0"/>
@@ -158,6 +163,10 @@
     </comp>
     <comp lib="0" loc="(1710,1140)" name="Tunnel">
       <a name="label" val="IsShamt"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1710,1260)" name="Tunnel">
+      <a name="label" val="RegRt"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1710,1910)" name="Tunnel">
@@ -563,9 +572,12 @@
     <wire from="(1450,1890)" to="(1450,1930)"/>
     <wire from="(1470,1870)" to="(1560,1870)"/>
     <wire from="(1510,1960)" to="(1560,1960)"/>
+    <wire from="(1580,1100)" to="(1630,1100)"/>
     <wire from="(1580,1790)" to="(1590,1790)"/>
     <wire from="(1590,1790)" to="(1590,1810)"/>
     <wire from="(1590,1990)" to="(1590,2020)"/>
+    <wire from="(1630,1060)" to="(1630,1100)"/>
+    <wire from="(1630,1060)" to="(1650,1060)"/>
     <wire from="(1650,1990)" to="(1650,2000)"/>
     <wire from="(1670,1800)" to="(1670,1810)"/>
     <wire from="(1690,1020)" to="(1720,1020)"/>
@@ -574,6 +586,7 @@
     <wire from="(1690,1170)" to="(1700,1170)"/>
     <wire from="(1690,1200)" to="(1780,1200)"/>
     <wire from="(1690,1230)" to="(1710,1230)"/>
+    <wire from="(1690,1260)" to="(1710,1260)"/>
     <wire from="(1690,1990)" to="(1690,2040)"/>
     <wire from="(1690,2040)" to="(1700,2040)"/>
     <wire from="(1690,770)" to="(1720,770)"/>

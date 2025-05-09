@@ -164,8 +164,16 @@
       <a name="label" val="isJAL"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1730,900)" name="Tunnel">
+      <a name="label" val="isJR"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1750,770)" name="Tunnel">
       <a name="label" val="RegWrite"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1750,810)" name="Tunnel">
+      <a name="label" val="MemtoReg"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1760,1800)" name="Tunnel">
@@ -177,8 +185,20 @@
       <a name="label" val="ExpBlock"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1760,880)" name="Tunnel">
+      <a name="label" val="MemRead"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1800,1840)" name="Tunnel">
       <a name="label" val="IsCOP0"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1810,830)" name="Tunnel">
+      <a name="label" val="IsCOP0"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1810,860)" name="Tunnel">
+      <a name="label" val="MemWrite"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1840,2060)" name="Tunnel">
@@ -516,7 +536,14 @@
     <wire from="(1690,2040)" to="(1700,2040)"/>
     <wire from="(1690,770)" to="(1720,770)"/>
     <wire from="(1690,790)" to="(1720,790)"/>
+    <wire from="(1690,810)" to="(1750,810)"/>
+    <wire from="(1690,840)" to="(1790,840)"/>
+    <wire from="(1690,860)" to="(1810,860)"/>
+    <wire from="(1690,880)" to="(1760,880)"/>
+    <wire from="(1690,910)" to="(1710,910)"/>
     <wire from="(1700,2040)" to="(1700,2050)"/>
+    <wire from="(1710,900)" to="(1710,910)"/>
+    <wire from="(1710,900)" to="(1730,900)"/>
     <wire from="(1720,740)" to="(1720,770)"/>
     <wire from="(1720,740)" to="(1730,740)"/>
     <wire from="(1720,780)" to="(1720,790)"/>
@@ -530,6 +557,8 @@
     <wire from="(1760,2010)" to="(1760,2020)"/>
     <wire from="(1770,1840)" to="(1800,1840)"/>
     <wire from="(1770,1950)" to="(1810,1950)"/>
+    <wire from="(1790,830)" to="(1790,840)"/>
+    <wire from="(1790,830)" to="(1810,830)"/>
     <wire from="(1810,1940)" to="(1810,1950)"/>
     <wire from="(1820,1880)" to="(1820,1910)"/>
     <wire from="(1820,1880)" to="(2080,1880)"/>

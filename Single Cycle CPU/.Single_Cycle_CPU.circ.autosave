@@ -83,6 +83,10 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,1500)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(130,1920)" name="Clock">
       <a name="facing" val="north"/>
     </comp>
@@ -118,6 +122,7 @@
       <a name="appearance" val="classic"/>
       <a name="width" val="16"/>
     </comp>
+    <wire from="(120,1500)" to="(160,1500)"/>
     <wire from="(130,1830)" to="(130,1920)"/>
     <wire from="(140,1750)" to="(140,1800)"/>
     <wire from="(150,1830)" to="(150,1880)"/>

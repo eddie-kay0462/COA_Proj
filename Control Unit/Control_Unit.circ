@@ -87,9 +87,9 @@
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" text-anchor="middle" x="66" y="157">Ctrl</text>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" text-anchor="middle" x="64" y="179"> Unit</text>
       <circ-anchor facing="east" x="90" y="40"/>
-      <circ-port dir="in" pin="1340,320" x="50" y="310"/>
       <circ-port dir="in" pin="160,100" x="50" y="220"/>
       <circ-port dir="in" pin="400,100" x="50" y="300"/>
+      <circ-port dir="out" pin="1340,320" x="50" y="310"/>
       <circ-port dir="out" pin="150,150" x="90" y="20"/>
       <circ-port dir="out" pin="150,190" x="90" y="420"/>
       <circ-port dir="out" pin="150,230" x="90" y="60"/>
@@ -214,7 +214,8 @@
     <comp lib="0" loc="(1340,320)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="ALOp"/>
+      <a name="label" val="ALUOp"/>
+      <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(1360,500)" name="Splitter">
@@ -566,7 +567,7 @@
       <a name="selloc" val="tr"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="8" loc="(1403,952)" name="Text">
+    <comp lib="8" loc="(1400,950)" name="Text">
       <a name="text" val="Exception Handler"/>
     </comp>
     <comp lib="8" loc="(280,55)" name="Text">

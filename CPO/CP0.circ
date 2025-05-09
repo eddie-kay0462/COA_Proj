@@ -581,16 +581,19 @@
     <comp lib="4" loc="(1380,650)" name="Register">
       <a name="appearance" val="classic"/>
       <a name="label" val="EPC_Reg"/>
+      <a name="trigger" val="falling"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(390,900)" name="Counter">
       <a name="appearance" val="classic"/>
       <a name="max" val="0x1"/>
+      <a name="ongoal" val="stay"/>
       <a name="width" val="1"/>
     </comp>
     <comp lib="4" loc="(520,980)" name="Counter">
       <a name="appearance" val="classic"/>
       <a name="max" val="0x1"/>
+      <a name="ongoal" val="stay"/>
       <a name="trigger" val="falling"/>
       <a name="width" val="1"/>
     </comp>

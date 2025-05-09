@@ -73,18 +73,14 @@
     </tool>
   </lib>
   <lib desc="#I/O" name="5"/>
-  <lib desc="#Base" name="6">
-    <tool name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
-    </tool>
-  </lib>
+  <lib desc="#Base" name="6"/>
   <lib desc="file#..\CPO\CP0.circ" name="7"/>
-  <lib desc="file#..\Register File\Regfile.circ" name="8"/>
-  <lib desc="file#..\..\Instruction_Statistics.circ" name="9"/>
-  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="10"/>
-  <lib desc="file#..\..\circs\circs\alu.circ" name="11"/>
-  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="12"/>
-  <lib desc="file#..\Control Unit\control.circ" name="13"/>
+  <lib desc="file#..\..\Instruction_Statistics.circ" name="8"/>
+  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="9"/>
+  <lib desc="file#..\..\circs\circs\alu.circ" name="10"/>
+  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="11"/>
+  <lib desc="file#..\Control Unit\control.circ" name="12"/>
+  <lib desc="file#..\..\regfile.circ" name="13"/>
   <main name="Single_Cycle_CPU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -99,9 +95,7 @@
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
     <tool lib="6" name="Edit Tool"/>
-    <tool lib="6" name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
-    </tool>
+    <tool lib="6" name="Text Tool"/>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
@@ -970,10 +964,10 @@
     <comp lib="1" loc="(860,930)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="10" loc="(660,700)" name="Immediate_Extender"/>
-    <comp lib="11" loc="(1220,510)" name="alu"/>
-    <comp lib="12" loc="(1010,330)" name="Syscall_Decoder"/>
-    <comp lib="13" loc="(900,250)" name="Control"/>
+    <comp lib="10" loc="(1220,510)" name="alu"/>
+    <comp lib="11" loc="(1010,330)" name="Syscall_Decoder"/>
+    <comp lib="12" loc="(900,250)" name="Control"/>
+    <comp lib="13" loc="(780,480)" name="RegFile"/>
     <comp lib="2" loc="(1120,560)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -1009,7 +1003,7 @@
     <comp lib="2" loc="(300,550)" name="Demultiplexer">
       <a name="width" val="9"/>
     </comp>
-    <comp lib="2" loc="(560,550)" name="Multiplexer">
+    <comp lib="2" loc="(550,550)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(630,560)" name="Multiplexer">
@@ -1079,7 +1073,48 @@
       <a name="addrWidth" val="9"/>
       <a name="appearance" val="classic"/>
       <a name="contents">addr/data: 9 32
-0
+20110001 8000c05 20110001 20120002 20130003 8000c09 20110001 20120002
+20130003 8000c0d 20110001 20120002 20130003 8000c11 20110001 20120002
+20130003 c000d2e 20100001 20110001 118fc0 112020 20020022 c
+118882 12200001 8000c15 112020 20020022 c 20110001 118880
+112020 20020022 c 12200001 8000c1f 20110001 118fc0 112020
+20020022 c 1188c3 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 118903 112020 20020022 c 118903 112020
+20020022 c 20100001 109fc0 139fc3 8021 2012000c 24160003
+26100001 3210000f 20080008 20090001 139900 2709825 132020 20020022
+c 1094022 1500fff9 22100001 2018000f 2188024 108700 20080008
+20090001 139902 2709825 132021 20020022 c 1094022 1500fff9
+108702 2c9b022 12c00001 8000c50 4020 1084027 84400 3508ffff
+82021 20020022 c 20110004 ae310000 8e320000 2252fffc 20100000
+22110001 2118020 22520004 ae500000 22310001 2118020 22520004 ae500000
+22310001 2118020 22520004 ae500000 22310001 2118020 22520004 ae500000
+22310001 2118020 22520004 ae500000 22310001 2118020 22520004 ae500000
+22310001 2118020 22520004 ae500000 20090001 8c080004 1509008f ac000004
+20090003 8c080008 1509008b ac000008 20090006 8c08000c 15090087 ac00000c
+2009000a 8c080010 15090083 ac000010 2009000f 8c080014 1509007f ac000014
+20090015 8c080018 1509007b ac000018 2009001c 8c08001c 15090077 ac00001c
+2010ffff 20110000 ae300000 22100001 22310004 ae300000 22100001 22310004
+ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000 22100001
+22310004 ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000
+22100001 22310004 ae300000 22100001 22310004 ae300000 22100001 22310004
+ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000 22100001
+22310004 ae300000 22100001 22310004 ae300000 22100001 22310004 ae300000
+22100001 22310004 22100001 8020 2011003c 8e130000 8e340000 274402a
+11000002 ae330000 ae140000 2231fffc 1611fff8 102020 20020022 c
+22100004 2011003c 1611fff2 20100001 201200ff 20110001 20130003 12120005
+12100004 20110001 20120002 20130003 8000d26 102020 20020001 c
+16310005 16320004 20110001 20120002 20130003 8000d26 132020 20020001
+c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
+2484ff9c 24840064 14800013 2020 34847fff 912024 1480000f 2020
+34848000 912024 1480000b 24040000 8000d20 8000d26 2002000a c
+20041ced 42400 3484cafe 20020022 c 8000d1e 3c010000 3421baad
+12020 42400 3484c0de 20020022 c 8000d1e 20100000 22100001
+102020 20020022 c 22100002 102020 20020022 c 22100003
+102020 20020022 c 22100004 102020 20020022 c 22100005
+102020 20020022 c 22100006 102020 20020022 c 22100007
+102020 20020022 c 22100008 102020 20020022 c 3e00008
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
@@ -1156,8 +1191,8 @@
       <a name="text" val="Screen"/>
     </comp>
     <comp lib="7" loc="(660,950)" name="CP0"/>
-    <comp lib="8" loc="(780,480)" name="RegFile"/>
-    <comp lib="9" loc="(510,180)" name="Instruction_Statistics"/>
+    <comp lib="8" loc="(510,180)" name="Instruction_Statistics"/>
+    <comp lib="9" loc="(660,700)" name="Immediate_Extender"/>
     <wire from="(1000,330)" to="(1000,350)"/>
     <wire from="(1000,350)" to="(1010,350)"/>
     <wire from="(1000,370)" to="(1000,380)"/>
@@ -1320,7 +1355,6 @@
     <wire from="(330,540)" to="(340,540)"/>
     <wire from="(330,560)" to="(340,560)"/>
     <wire from="(340,190)" to="(340,320)"/>
-    <wire from="(340,510)" to="(340,520)"/>
     <wire from="(340,520)" to="(340,540)"/>
     <wire from="(340,560)" to="(340,610)"/>
     <wire from="(360,190)" to="(360,210)"/>
@@ -1355,19 +1389,19 @@
     <wire from="(500,230)" to="(510,230)"/>
     <wire from="(520,520)" to="(520,540)"/>
     <wire from="(520,520)" to="(560,520)"/>
-    <wire from="(520,540)" to="(530,540)"/>
     <wire from="(520,560)" to="(520,610)"/>
-    <wire from="(520,560)" to="(530,560)"/>
     <wire from="(520,610)" to="(550,610)"/>
-    <wire from="(540,570)" to="(540,660)"/>
+    <wire from="(530,570)" to="(530,580)"/>
+    <wire from="(530,580)" to="(540,580)"/>
+    <wire from="(540,580)" to="(540,660)"/>
     <wire from="(540,730)" to="(550,730)"/>
     <wire from="(550,430)" to="(560,430)"/>
+    <wire from="(550,550)" to="(570,550)"/>
     <wire from="(550,610)" to="(550,730)"/>
     <wire from="(550,910)" to="(550,920)"/>
     <wire from="(550,910)" to="(610,910)"/>
     <wire from="(560,220)" to="(600,220)"/>
     <wire from="(560,430)" to="(560,520)"/>
-    <wire from="(560,550)" to="(570,550)"/>
     <wire from="(570,240)" to="(570,320)"/>
     <wire from="(570,240)" to="(580,240)"/>
     <wire from="(570,320)" to="(570,490)"/>

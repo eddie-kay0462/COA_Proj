@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="alu"/>
+  <main name="Adder_with_Overflow_Detection"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -58,17 +58,9 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="387">Y</text>
-      <polyline fill="none" points="319,190 320,248" stroke="#000000"/>
-      <polyline fill="none" points="320,248 351,280" stroke="#000000"/>
-      <polyline fill="none" points="351,280 351,325" stroke="#000000"/>
-      <polyline fill="none" points="351,326 319,360" stroke="#000000"/>
-      <polyline fill="none" points="320,359 321,425" stroke="#000000"/>
-      <polyline fill="none" points="320,423 411,329" stroke="#000000"/>
-      <polyline fill="none" points="319,189 411,253" stroke="#000000"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="219">X</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="350" y="377">OF</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="369" y="352">CF</text>
-      <polyline fill="none" points="409,251 411,333" stroke="#000000"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="396" y="279">R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="395" y="313">R2</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="365" y="238">ALUOp</text>

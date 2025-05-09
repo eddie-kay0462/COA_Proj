@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="alu"/>
+  <main name="Adder_with_Overflow_Detection"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -57,31 +57,24 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="387">Y</text>
-      <polyline fill="none" points="319,190 320,248" stroke="#000000"/>
-      <polyline fill="none" points="320,248 351,280" stroke="#000000"/>
-      <polyline fill="none" points="351,280 351,325" stroke="#000000"/>
-      <polyline fill="none" points="351,326 319,360" stroke="#000000"/>
-      <polyline fill="none" points="320,359 321,425" stroke="#000000"/>
-      <polyline fill="none" points="320,423 411,329" stroke="#000000"/>
-      <polyline fill="none" points="319,189 411,253" stroke="#000000"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="219">X</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="350" y="377">OF</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="369" y="352">CF</text>
-      <polyline fill="none" points="409,251 411,333" stroke="#000000"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="396" y="279">R</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="395" y="313">R2</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="365" y="238">ALUOp</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="349" y="221">=</text>
-      <circ-anchor facing="east" x="350" y="390"/>
-      <circ-port dir="in" pin="1150,250" x="380" y="230"/>
-      <circ-port dir="in" pin="350,260" x="320" y="220"/>
-      <circ-port dir="in" pin="730,260" x="320" y="390"/>
-      <circ-port dir="out" pin="1430,250" x="410" y="280"/>
-      <circ-port dir="out" pin="1580,250" x="410" y="310"/>
-      <circ-port dir="out" pin="1880,210" x="350" y="390"/>
-      <circ-port dir="out" pin="1880,280" x="380" y="360"/>
-      <circ-port dir="out" pin="1880,340" x="350" y="210"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="716" y="458">Y</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="720" y="299">X</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="730" y="441">OF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="767" y="414">CF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="782" y="339">R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="784" y="370">R2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="755" y="312">ALUOp</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="736" y="301">=</text>
+      <polyline fill="none" points="710,277 710,340 739,361 740,400 710,420 710,480 800,400 800,320 708,279" stroke="#000000"/>
+      <circ-anchor facing="east" x="740" y="450"/>
+      <circ-port dir="in" pin="1150,250" x="760" y="300"/>
+      <circ-port dir="in" pin="350,260" x="710" y="300"/>
+      <circ-port dir="in" pin="730,260" x="710" y="450"/>
+      <circ-port dir="out" pin="1430,250" x="800" y="340"/>
+      <circ-port dir="out" pin="1580,250" x="800" y="370"/>
+      <circ-port dir="out" pin="1880,210" x="740" y="450"/>
+      <circ-port dir="out" pin="1880,280" x="780" y="420"/>
+      <circ-port dir="out" pin="1880,340" x="730" y="290"/>
     </appear>
     <comp lib="0" loc="(1010,1890)" name="Constant">
       <a name="facing" val="south"/>

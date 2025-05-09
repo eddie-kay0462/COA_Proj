@@ -1132,14 +1132,36 @@
     </comp>
     <comp lib="5" loc="(2970,1080)" name="Hex Digit Display">
       <a name="bg" val="#000000"/>
+      <a name="color" val="#18c728"/>
     </comp>
-    <comp lib="5" loc="(3010,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3050,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3090,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3130,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3170,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3210,1080)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(3250,1080)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(3010,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#0cf012"/>
+    </comp>
+    <comp lib="5" loc="(3050,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#3df03e"/>
+    </comp>
+    <comp lib="5" loc="(3090,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#12f014"/>
+    </comp>
+    <comp lib="5" loc="(3130,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#28f043"/>
+    </comp>
+    <comp lib="5" loc="(3170,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#25f025"/>
+    </comp>
+    <comp lib="5" loc="(3210,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#48f039"/>
+    </comp>
+    <comp lib="5" loc="(3250,1080)" name="Hex Digit Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#23f025"/>
+    </comp>
     <comp lib="8" loc="(1450,1835)" name="Text">
       <a name="text" val="PC Buffer"/>
     </comp>

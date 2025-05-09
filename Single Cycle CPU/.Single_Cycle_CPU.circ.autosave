@@ -151,7 +151,7 @@
       <a name="label" val="ExRegWrite"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(810,2350)" name="Tunnel">
+    <comp lib="0" loc="(810,2370)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="ExpSrc1"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -287,7 +287,7 @@
     <wire from="(730,2360)" to="(730,2380)"/>
     <wire from="(730,2560)" to="(730,2590)"/>
     <wire from="(790,2560)" to="(790,2570)"/>
-    <wire from="(810,2350)" to="(810,2380)"/>
+    <wire from="(810,2370)" to="(810,2380)"/>
     <wire from="(830,2560)" to="(830,2610)"/>
     <wire from="(830,2610)" to="(840,2610)"/>
     <wire from="(840,2610)" to="(840,2620)"/>

@@ -168,6 +168,10 @@
       <a name="label" val="RegDst"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1730,1220)" name="Tunnel">
+      <a name="label" val="RegRs"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1730,740)" name="Tunnel">
       <a name="label" val="isJAL"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -211,6 +215,10 @@
     </comp>
     <comp lib="0" loc="(1770,960)" name="Tunnel">
       <a name="label" val="Branch"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1780,1200)" name="Tunnel">
+      <a name="label" val="ZeroExtend"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1790,990)" name="Tunnel">
@@ -564,6 +572,8 @@
     <wire from="(1690,1050)" to="(1730,1050)"/>
     <wire from="(1690,1090)" to="(1700,1090)"/>
     <wire from="(1690,1170)" to="(1700,1170)"/>
+    <wire from="(1690,1200)" to="(1780,1200)"/>
+    <wire from="(1690,1230)" to="(1710,1230)"/>
     <wire from="(1690,1990)" to="(1690,2040)"/>
     <wire from="(1690,2040)" to="(1700,2040)"/>
     <wire from="(1690,770)" to="(1720,770)"/>
@@ -581,6 +591,8 @@
     <wire from="(1700,1140)" to="(1700,1170)"/>
     <wire from="(1700,1140)" to="(1710,1140)"/>
     <wire from="(1700,2040)" to="(1700,2050)"/>
+    <wire from="(1710,1220)" to="(1710,1230)"/>
+    <wire from="(1710,1220)" to="(1730,1220)"/>
     <wire from="(1710,900)" to="(1710,910)"/>
     <wire from="(1710,900)" to="(1730,900)"/>
     <wire from="(1720,1010)" to="(1720,1020)"/>

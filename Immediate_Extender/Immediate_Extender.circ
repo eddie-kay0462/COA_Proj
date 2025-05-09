@@ -56,8 +56,16 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="none" height="55" stroke="#000000" width="55" x="50" y="50"/>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="150,240" x="50" y="70"/>
+      <circ-port dir="in" pin="400,140" x="80" y="50"/>
+      <circ-port dir="out" pin="550,250" x="270" y="60"/>
+    </appear>
     <comp lib="0" loc="(150,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="Imme_Value"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(350,200)" name="Bit Extender">

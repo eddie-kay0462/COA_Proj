@@ -108,6 +108,16 @@
       <a name="facing" val="north"/>
       <a name="label" val="Clk"/>
     </comp>
+    <comp lib="0" loc="(40,1700)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsRet"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(80,1730)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsCOP0"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="1" loc="(170,1560)" name="NOT Gate">
       <a name="facing" val="north"/>
       <a name="size" val="20"/>
@@ -137,6 +147,7 @@
       <a name="appearance" val="classic"/>
       <a name="width" val="1"/>
     </comp>
+    <wire from="(100,1680)" to="(100,1710)"/>
     <wire from="(110,1540)" to="(140,1540)"/>
     <wire from="(120,1500)" to="(160,1500)"/>
     <wire from="(130,1830)" to="(130,1920)"/>
@@ -160,5 +171,13 @@
     <wire from="(280,1550)" to="(280,1580)"/>
     <wire from="(290,1610)" to="(290,1630)"/>
     <wire from="(290,1660)" to="(290,1670)"/>
+    <wire from="(40,1690)" to="(40,1700)"/>
+    <wire from="(40,1690)" to="(80,1690)"/>
+    <wire from="(80,1680)" to="(80,1690)"/>
+    <wire from="(80,1710)" to="(100,1710)"/>
+    <wire from="(80,1710)" to="(80,1730)"/>
+    <wire from="(90,1560)" to="(90,1610)"/>
+    <wire from="(90,1610)" to="(190,1610)"/>
+    <wire from="(90,1610)" to="(90,1650)"/>
   </circuit>
 </project>

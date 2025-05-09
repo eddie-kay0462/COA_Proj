@@ -491,6 +491,44 @@
       <a name="label" val="ExpBlock"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1770,1330)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit10" val="none"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit2" val="none"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+      <a name="bit28" val="0"/>
+      <a name="bit29" val="0"/>
+      <a name="bit3" val="none"/>
+      <a name="bit30" val="0"/>
+      <a name="bit31" val="0"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="none"/>
+      <a name="bit8" val="none"/>
+      <a name="bit9" val="none"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="32"/>
+    </comp>
     <comp lib="0" loc="(1800,1840)" name="Tunnel">
       <a name="label" val="IsCOP0"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -955,8 +993,10 @@
     <wire from="(1320,880)" to="(1350,880)"/>
     <wire from="(1320,890)" to="(1350,890)"/>
     <wire from="(1370,870)" to="(1510,870)"/>
-    <wire from="(1380,1230)" to="(1380,1580)"/>
+    <wire from="(1380,1230)" to="(1380,1260)"/>
     <wire from="(1380,1230)" to="(1490,1230)"/>
+    <wire from="(1380,1260)" to="(1380,1580)"/>
+    <wire from="(1380,1260)" to="(1510,1260)"/>
     <wire from="(1380,640)" to="(1380,900)"/>
     <wire from="(1380,900)" to="(1380,980)"/>
     <wire from="(1380,900)" to="(1490,900)"/>
@@ -983,7 +1023,9 @@
     <wire from="(1510,980)" to="(1540,980)"/>
     <wire from="(1520,990)" to="(1520,1010)"/>
     <wire from="(1520,990)" to="(1540,990)"/>
-    <wire from="(1550,1260)" to="(2010,1260)"/>
+    <wire from="(1530,1260)" to="(1530,1300)"/>
+    <wire from="(1530,1260)" to="(2010,1260)"/>
+    <wire from="(1530,1300)" to="(1870,1300)"/>
     <wire from="(1580,1020)" to="(1590,1020)"/>
     <wire from="(1580,1100)" to="(1590,1100)"/>
     <wire from="(1580,1130)" to="(1670,1130)"/>

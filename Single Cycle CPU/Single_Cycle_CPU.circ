@@ -83,29 +83,82 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(140,1820)" name="Clock">
+    <comp lib="0" loc="(120,1500)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(130,1920)" name="Clock">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(150,1650)" name="Tunnel">
+    <comp lib="0" loc="(140,1750)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="Clk"/>
     </comp>
-    <comp lib="0" loc="(160,1780)" name="Constant">
+    <comp lib="0" loc="(150,1880)" name="Constant">
       <a name="facing" val="north"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(200,1720)" name="Tunnel">
+    <comp lib="0" loc="(190,1820)" name="Tunnel">
       <a name="label" val="Halt"/>
+    </comp>
+    <comp lib="0" loc="(210,1540)" name="Tunnel">
+      <a name="label" val="HasExp"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(270,1680)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clk"/>
+    </comp>
+    <comp lib="1" loc="(170,1560)" name="NOT Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(220,1600)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(290,1630)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(90,1650)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
     </comp>
     <comp lib="12" loc="(710,920)" name="CP0"/>
     <comp lib="14" loc="(690,100)" name="control_unit"/>
-    <comp lib="2" loc="(150,1700)" name="Multiplexer">
+    <comp lib="2" loc="(110,1540)" name="Multiplexer"/>
+    <comp lib="2" loc="(140,1800)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="selloc" val="tr"/>
     </comp>
-    <wire from="(140,1730)" to="(140,1820)"/>
-    <wire from="(150,1650)" to="(150,1700)"/>
-    <wire from="(160,1730)" to="(160,1780)"/>
-    <wire from="(170,1720)" to="(200,1720)"/>
+    <comp lib="2" loc="(190,1510)" name="Multiplexer"/>
+    <comp lib="2" loc="(280,1580)" name="Multiplexer">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="4" loc="(290,1510)" name="Register">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="1"/>
+    </comp>
+    <wire from="(110,1540)" to="(140,1540)"/>
+    <wire from="(120,1500)" to="(160,1500)"/>
+    <wire from="(130,1830)" to="(130,1920)"/>
+    <wire from="(140,1520)" to="(140,1540)"/>
+    <wire from="(140,1520)" to="(160,1520)"/>
+    <wire from="(140,1750)" to="(140,1800)"/>
+    <wire from="(150,1830)" to="(150,1880)"/>
+    <wire from="(160,1820)" to="(190,1820)"/>
+    <wire from="(170,1530)" to="(170,1540)"/>
+    <wire from="(170,1540)" to="(170,1560)"/>
+    <wire from="(170,1540)" to="(210,1540)"/>
+    <wire from="(170,1580)" to="(170,1590)"/>
+    <wire from="(170,1590)" to="(190,1590)"/>
+    <wire from="(190,1510)" to="(260,1510)"/>
+    <wire from="(220,1600)" to="(260,1600)"/>
+    <wire from="(270,1530)" to="(270,1550)"/>
+    <wire from="(270,1550)" to="(280,1550)"/>
+    <wire from="(270,1610)" to="(270,1670)"/>
+    <wire from="(270,1670)" to="(270,1680)"/>
+    <wire from="(270,1670)" to="(290,1670)"/>
+    <wire from="(280,1550)" to="(280,1580)"/>
+    <wire from="(290,1610)" to="(290,1630)"/>
+    <wire from="(290,1660)" to="(290,1670)"/>
   </circuit>
 </project>

@@ -168,6 +168,10 @@
       <a name="label" val="RegWrite"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1750,810)" name="Tunnel">
+      <a name="label" val="MemtoReg"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1760,1800)" name="Tunnel">
       <a name="label" val="ExpSrc2"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -516,6 +520,7 @@
     <wire from="(1690,2040)" to="(1700,2040)"/>
     <wire from="(1690,770)" to="(1720,770)"/>
     <wire from="(1690,790)" to="(1720,790)"/>
+    <wire from="(1690,810)" to="(1750,810)"/>
     <wire from="(1700,2040)" to="(1700,2050)"/>
     <wire from="(1720,740)" to="(1720,770)"/>
     <wire from="(1720,740)" to="(1730,740)"/>

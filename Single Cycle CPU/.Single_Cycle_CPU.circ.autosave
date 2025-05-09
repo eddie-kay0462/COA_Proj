@@ -716,7 +716,7 @@
     </comp>
     <comp lib="12" loc="(2670,1170)" name="syscall_decoder"/>
     <comp lib="13" loc="(1650,770)" name="control_unit"/>
-    <comp lib="14" loc="(1400,830)" name="Instruction_Statistics"/>
+    <comp lib="14" loc="(1290,830)" name="Instruction_Statistics"/>
     <comp lib="15" loc="(2290,1270)" name="regfile"/>
     <comp lib="16" loc="(1650,1990)" name="CP0"/>
     <comp lib="17" loc="(2660,1400)" name="alu"/>
@@ -899,17 +899,17 @@
     <wire from="(1310,1510)" to="(1310,1520)"/>
     <wire from="(1310,1510)" to="(1330,1510)"/>
     <wire from="(1320,1390)" to="(1320,1420)"/>
+    <wire from="(1320,840)" to="(1450,840)"/>
+    <wire from="(1320,850)" to="(1450,850)"/>
+    <wire from="(1320,860)" to="(1450,860)"/>
+    <wire from="(1320,870)" to="(1450,870)"/>
+    <wire from="(1320,880)" to="(1450,880)"/>
+    <wire from="(1320,890)" to="(1450,890)"/>
     <wire from="(1330,1450)" to="(1330,1470)"/>
     <wire from="(1330,1500)" to="(1330,1510)"/>
     <wire from="(1380,640)" to="(1380,740)"/>
     <wire from="(1390,2080)" to="(1920,2080)"/>
     <wire from="(1400,640)" to="(1460,640)"/>
-    <wire from="(1430,840)" to="(1450,840)"/>
-    <wire from="(1430,850)" to="(1450,850)"/>
-    <wire from="(1430,860)" to="(1450,860)"/>
-    <wire from="(1430,870)" to="(1450,870)"/>
-    <wire from="(1430,880)" to="(1450,880)"/>
-    <wire from="(1430,890)" to="(1450,890)"/>
     <wire from="(1440,630)" to="(1460,630)"/>
     <wire from="(1440,650)" to="(1440,670)"/>
     <wire from="(1440,650)" to="(1460,650)"/>

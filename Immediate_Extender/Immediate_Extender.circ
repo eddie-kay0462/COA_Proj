@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="immediate_extender"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -51,19 +51,19 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="immediate_extender">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="immediate_extender"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="none" height="55" stroke="#000000" width="55" x="50" y="50"/>
       <circ-anchor facing="east" x="270" y="60"/>
-      <circ-port dir="in" pin="150,240" x="50" y="70"/>
+      <circ-port dir="in" pin="210,240" x="50" y="70"/>
       <circ-port dir="in" pin="400,140" x="80" y="50"/>
       <circ-port dir="out" pin="550,250" x="270" y="60"/>
     </appear>
-    <comp lib="0" loc="(150,240)" name="Pin">
+    <comp lib="0" loc="(210,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Imme_Value"/>
       <a name="width" val="16"/>
@@ -93,7 +93,7 @@
       <a name="selloc" val="tr"/>
       <a name="width" val="32"/>
     </comp>
-    <wire from="(150,240)" to="(230,240)"/>
+    <wire from="(210,240)" to="(230,240)"/>
     <wire from="(230,200)" to="(230,240)"/>
     <wire from="(230,200)" to="(310,200)"/>
     <wire from="(230,240)" to="(230,290)"/>

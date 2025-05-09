@@ -409,6 +409,43 @@
       <a name="label" val="ExpSrc2"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(2810,1330)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="none"/>
+      <a name="bit13" val="none"/>
+      <a name="bit14" val="none"/>
+      <a name="bit15" val="none"/>
+      <a name="bit16" val="none"/>
+      <a name="bit17" val="none"/>
+      <a name="bit18" val="none"/>
+      <a name="bit19" val="none"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="none"/>
+      <a name="bit21" val="none"/>
+      <a name="bit22" val="none"/>
+      <a name="bit23" val="none"/>
+      <a name="bit24" val="none"/>
+      <a name="bit25" val="none"/>
+      <a name="bit26" val="none"/>
+      <a name="bit27" val="none"/>
+      <a name="bit28" val="none"/>
+      <a name="bit29" val="none"/>
+      <a name="bit3" val="0"/>
+      <a name="bit30" val="none"/>
+      <a name="bit31" val="none"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="32"/>
+    </comp>
     <comp lib="0" loc="(2880,1000)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="BneOrBeq"/>
@@ -624,6 +661,7 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(2850,1320)" name="RAM">
+      <a name="addrWidth" val="10"/>
       <a name="appearance" val="classic"/>
       <a name="dataWidth" val="32"/>
     </comp>
@@ -878,11 +916,12 @@
     <wire from="(2700,1830)" to="(2700,1850)"/>
     <wire from="(2750,1280)" to="(2750,1330)"/>
     <wire from="(2750,1280)" to="(3120,1280)"/>
-    <wire from="(2750,1330)" to="(2850,1330)"/>
+    <wire from="(2750,1330)" to="(2810,1330)"/>
     <wire from="(2750,1410)" to="(2750,1610)"/>
     <wire from="(2750,1410)" to="(2850,1410)"/>
     <wire from="(2800,1610)" to="(2800,2130)"/>
     <wire from="(2800,1610)" to="(3340,1610)"/>
+    <wire from="(2830,1330)" to="(2850,1330)"/>
     <wire from="(2840,1070)" to="(2840,1210)"/>
     <wire from="(2840,1210)" to="(3110,1210)"/>
     <wire from="(2880,1000)" to="(2960,1000)"/>

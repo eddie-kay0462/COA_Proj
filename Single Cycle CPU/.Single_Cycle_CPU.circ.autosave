@@ -42,8 +42,8 @@
   <lib desc="file#..\Control Unit\Control_Unit.circ" name="13"/>
   <lib desc="file#..\..\Instruction_Statistics.circ" name="14"/>
   <lib desc="file#..\Register File\RegFile.circ" name="15"/>
-  <lib desc="file#..\CPO\CP0.circ" name="16"/>
-  <lib desc="file#..\ALU\ALU.circ" name="17"/>
+  <lib desc="file#..\ALU\ALU.circ" name="16"/>
+  <lib desc="file#..\CPO\CP0.circ" name="17"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -916,8 +916,8 @@
     <comp lib="13" loc="(1580,720)" name="control_unit"/>
     <comp lib="14" loc="(1290,830)" name="Instruction_Statistics"/>
     <comp lib="15" loc="(2290,1270)" name="regfile"/>
-    <comp lib="16" loc="(1650,1990)" name="CP0"/>
-    <comp lib="17" loc="(2660,1400)" name="alu"/>
+    <comp lib="16" loc="(2660,1400)" name="alu"/>
+    <comp lib="17" loc="(1280,1700)" name="CP0"/>
     <comp lib="2" loc="(1340,1300)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -1020,14 +1020,20 @@
       <a name="appearance" val="classic"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(940,1130)" name="RAM">
+    <comp lib="4" loc="(940,1110)" name="ROM">
       <a name="addrWidth" val="9"/>
       <a name="appearance" val="classic"/>
+      <a name="contents">addr/data: 9 32
+0
+</a>
       <a name="dataWidth" val="32"/>
     </comp>
-    <comp lib="4" loc="(940,1370)" name="RAM">
+    <comp lib="4" loc="(960,1310)" name="ROM">
       <a name="addrWidth" val="9"/>
       <a name="appearance" val="classic"/>
+      <a name="contents">addr/data: 9 32
+0
+</a>
       <a name="dataWidth" val="32"/>
     </comp>
     <comp lib="4" loc="(980,780)" name="Register">
@@ -1080,13 +1086,13 @@
     <wire from="(1080,760)" to="(1080,880)"/>
     <wire from="(1110,730)" to="(1110,880)"/>
     <wire from="(1110,880)" to="(1290,880)"/>
-    <wire from="(1180,1220)" to="(1290,1220)"/>
-    <wire from="(1180,1460)" to="(1280,1460)"/>
+    <wire from="(1180,1170)" to="(1290,1170)"/>
     <wire from="(1190,710)" to="(1470,710)"/>
+    <wire from="(1200,1370)" to="(1280,1370)"/>
     <wire from="(1270,2090)" to="(1350,2090)"/>
-    <wire from="(1280,1310)" to="(1280,1460)"/>
+    <wire from="(1280,1310)" to="(1280,1370)"/>
     <wire from="(1280,1310)" to="(1310,1310)"/>
-    <wire from="(1290,1220)" to="(1290,1290)"/>
+    <wire from="(1290,1170)" to="(1290,1290)"/>
     <wire from="(1290,1290)" to="(1310,1290)"/>
     <wire from="(1320,1320)" to="(1320,1610)"/>
     <wire from="(1320,840)" to="(1350,840)"/>
@@ -1407,19 +1413,19 @@
     <wire from="(870,850)" to="(870,880)"/>
     <wire from="(870,850)" to="(920,850)"/>
     <wire from="(880,1310)" to="(900,1310)"/>
-    <wire from="(880,1330)" to="(900,1330)"/>
+    <wire from="(880,1330)" to="(940,1330)"/>
     <wire from="(890,840)" to="(1000,840)"/>
     <wire from="(890,840)" to="(890,880)"/>
-    <wire from="(900,1140)" to="(900,1310)"/>
-    <wire from="(900,1140)" to="(940,1140)"/>
-    <wire from="(900,1330)" to="(900,1380)"/>
-    <wire from="(900,1380)" to="(940,1380)"/>
+    <wire from="(900,1120)" to="(900,1310)"/>
+    <wire from="(900,1120)" to="(940,1120)"/>
     <wire from="(900,810)" to="(920,810)"/>
     <wire from="(910,880)" to="(1080,880)"/>
     <wire from="(920,810)" to="(920,850)"/>
     <wire from="(930,790)" to="(930,860)"/>
     <wire from="(930,790)" to="(950,790)"/>
     <wire from="(930,860)" to="(1290,860)"/>
+    <wire from="(940,1320)" to="(940,1330)"/>
+    <wire from="(940,1320)" to="(960,1320)"/>
     <wire from="(960,800)" to="(960,810)"/>
     <wire from="(980,780)" to="(1000,780)"/>
   </circuit>

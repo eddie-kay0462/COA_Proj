@@ -57,24 +57,24 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="387">Y</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="329" y="219">X</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="350" y="377">OF</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="369" y="352">CF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="466" y="330">Y</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="490" y="180">X</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="497" y="310">OF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="521" y="285">CF</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="541" y="220">R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="539" y="261">R2</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="365" y="238">ALUOp</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="349" y="221">=</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="546" y="174">ALUOp</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="503" y="181">=</text>
       <polyline fill="none" points="480,160 480,201 511,231 510,270 479,301 480,343 550,271 551,200 481,162" stroke="#000000"/>
-      <circ-anchor facing="east" x="350" y="390"/>
-      <circ-port dir="in" pin="1150,250" x="380" y="230"/>
-      <circ-port dir="in" pin="350,260" x="320" y="220"/>
-      <circ-port dir="in" pin="730,260" x="320" y="390"/>
+      <circ-anchor facing="east" x="500" y="320"/>
+      <circ-port dir="in" pin="1150,250" x="530" y="190"/>
+      <circ-port dir="in" pin="350,260" x="480" y="180"/>
+      <circ-port dir="in" pin="730,260" x="480" y="330"/>
       <circ-port dir="out" pin="1430,250" x="550" y="220"/>
       <circ-port dir="out" pin="1580,250" x="550" y="260"/>
-      <circ-port dir="out" pin="1880,210" x="350" y="390"/>
-      <circ-port dir="out" pin="1880,280" x="540" y="290"/>
-      <circ-port dir="out" pin="1880,340" x="350" y="210"/>
+      <circ-port dir="out" pin="1880,210" x="500" y="320"/>
+      <circ-port dir="out" pin="1880,280" x="530" y="290"/>
+      <circ-port dir="out" pin="1880,340" x="500" y="170"/>
     </appear>
     <comp lib="0" loc="(1010,1890)" name="Constant">
       <a name="facing" val="south"/>

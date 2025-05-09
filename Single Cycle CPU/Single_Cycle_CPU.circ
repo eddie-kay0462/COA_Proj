@@ -39,13 +39,13 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="12"/>
-  <lib desc="file#..\CPO\CP0.circ" name="13"/>
-  <lib desc="file#..\Register File\RegFile.circ" name="14"/>
-  <lib desc="file#..\Immediate_Extender\Immediate_Extender.circ" name="15"/>
-  <lib desc="file#..\..\Instruction_Statistics.circ" name="16"/>
+  <lib desc="file#..\Control Unit\Control_Unit.circ" name="12"/>
+  <lib desc="file#..\..\Instruction_Statistics.circ" name="13"/>
+  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="14"/>
+  <lib desc="file#..\Register File\RegFile.circ" name="15"/>
+  <lib desc="file#..\Immediate_Extender\Immediate_Extender.circ" name="16"/>
   <lib desc="file#..\ALU\ALU.circ" name="17"/>
-  <lib desc="file#..\Control Unit\Control_Unit.circ" name="18"/>
+  <lib desc="file#..\CPO\CP0.circ" name="18"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -997,13 +997,13 @@
     <comp lib="1" loc="(710,1430)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="12" loc="(2670,1170)" name="syscall_decoder"/>
-    <comp lib="13" loc="(1650,1990)" name="CP0"/>
-    <comp lib="14" loc="(2290,1270)" name="regfile"/>
-    <comp lib="15" loc="(2060,1550)" name="immediate_extender"/>
-    <comp lib="16" loc="(1290,830)" name="Instruction_Statistics"/>
+    <comp lib="12" loc="(1580,720)" name="control_unit"/>
+    <comp lib="13" loc="(1290,830)" name="Instruction_Statistics"/>
+    <comp lib="14" loc="(2670,1170)" name="syscall_decoder"/>
+    <comp lib="15" loc="(2290,1270)" name="regfile"/>
+    <comp lib="16" loc="(2060,1550)" name="immediate_extender"/>
     <comp lib="17" loc="(2660,1400)" name="alu"/>
-    <comp lib="18" loc="(1580,720)" name="control_unit"/>
+    <comp lib="18" loc="(1650,1990)" name="CP0"/>
     <comp lib="2" loc="(1340,1300)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>

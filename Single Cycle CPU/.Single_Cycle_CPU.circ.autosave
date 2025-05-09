@@ -940,6 +940,7 @@
     </comp>
     <comp lib="4" loc="(940,1130)" name="RAM">
       <a name="appearance" val="classic"/>
+      <a name="dataWidth" val="32"/>
     </comp>
     <comp lib="4" loc="(940,1370)" name="RAM">
       <a name="appearance" val="classic"/>
@@ -988,8 +989,11 @@
     </comp>
     <wire from="(1040,920)" to="(1070,920)"/>
     <wire from="(1070,920)" to="(1070,1040)"/>
+    <wire from="(1180,1220)" to="(1290,1220)"/>
     <wire from="(1190,710)" to="(1470,710)"/>
     <wire from="(1270,2090)" to="(1350,2090)"/>
+    <wire from="(1290,1220)" to="(1290,1290)"/>
+    <wire from="(1290,1290)" to="(1310,1290)"/>
     <wire from="(1320,840)" to="(1350,840)"/>
     <wire from="(1320,850)" to="(1350,850)"/>
     <wire from="(1320,860)" to="(1350,860)"/>

@@ -42,8 +42,8 @@
   <lib desc="file#..\Control Unit\Control_Unit.circ" name="13"/>
   <lib desc="file#..\..\Instruction_Statistics.circ" name="14"/>
   <lib desc="file#..\Register File\RegFile.circ" name="15"/>
-  <lib desc="file#..\CPO\CP0.circ" name="16"/>
-  <lib desc="file#..\ALU\ALU.circ" name="17"/>
+  <lib desc="file#..\ALU\ALU.circ" name="16"/>
+  <lib desc="file#..\CPO\CP0.circ" name="17"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -916,8 +916,8 @@
     <comp lib="13" loc="(1580,720)" name="control_unit"/>
     <comp lib="14" loc="(1290,830)" name="Instruction_Statistics"/>
     <comp lib="15" loc="(2290,1270)" name="regfile"/>
-    <comp lib="16" loc="(1650,1990)" name="CP0"/>
-    <comp lib="17" loc="(2660,1400)" name="alu"/>
+    <comp lib="16" loc="(2660,1400)" name="alu"/>
+    <comp lib="17" loc="(1650,1990)" name="CP0"/>
     <comp lib="2" loc="(1340,1300)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>

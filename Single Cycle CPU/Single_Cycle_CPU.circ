@@ -236,6 +236,10 @@
     <comp lib="3" loc="(530,2650)" name="Adder">
       <a name="width" val="32"/>
     </comp>
+    <comp lib="4" loc="(1730,2050)" name="RAM">
+      <a name="appearance" val="classic"/>
+      <a name="dataWidth" val="32"/>
+    </comp>
     <comp lib="4" loc="(470,1920)" name="Register">
       <a name="appearance" val="classic"/>
       <a name="width" val="32"/>
@@ -253,9 +257,15 @@
     <wire from="(1070,2540)" to="(1070,2610)"/>
     <wire from="(1080,2640)" to="(1080,2700)"/>
     <wire from="(1080,2700)" to="(2220,2700)"/>
+    <wire from="(1600,2060)" to="(1730,2060)"/>
+    <wire from="(1690,2010)" to="(1690,2050)"/>
+    <wire from="(1690,2010)" to="(2000,2010)"/>
     <wire from="(180,1960)" to="(180,2480)"/>
     <wire from="(180,1960)" to="(260,1960)"/>
     <wire from="(180,2480)" to="(700,2480)"/>
+    <wire from="(1970,2140)" to="(2050,2140)"/>
+    <wire from="(2000,2010)" to="(2000,2120)"/>
+    <wire from="(2000,2120)" to="(2050,2120)"/>
     <wire from="(2060,2150)" to="(2060,2180)"/>
     <wire from="(2080,2130)" to="(2220,2130)"/>
     <wire from="(220,2100)" to="(220,2110)"/>

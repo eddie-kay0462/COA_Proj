@@ -281,12 +281,6 @@
     </comp>
     <comp lib="0" loc="(320,700)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit0" val="5"/>
-      <a name="bit1" val="4"/>
-      <a name="bit2" val="3"/>
-      <a name="bit3" val="2"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="0"/>
       <a name="fanout" val="6"/>
       <a name="incoming" val="6"/>
     </comp>
@@ -454,12 +448,6 @@
     </comp>
     <comp lib="0" loc="(680,690)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit0" val="5"/>
-      <a name="bit1" val="4"/>
-      <a name="bit2" val="3"/>
-      <a name="bit3" val="2"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="0"/>
       <a name="fanout" val="6"/>
       <a name="incoming" val="6"/>
     </comp>
@@ -470,12 +458,6 @@
     </comp>
     <comp lib="0" loc="(760,430)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit0" val="5"/>
-      <a name="bit1" val="4"/>
-      <a name="bit2" val="3"/>
-      <a name="bit3" val="2"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="0"/>
       <a name="fanout" val="6"/>
       <a name="incoming" val="6"/>
     </comp>

@@ -3,108 +3,164 @@
   This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="north"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="32"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="value" val="0x0"/>
     </tool>
   </lib>
-  <lib desc="#Gates" name="1"/>
-  <lib desc="#Plexers" name="2"/>
-  <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Gates" name="1">
+    <tool name="Buffer">
+      <a name="width" val="3"/>
+    </tool>
+    <tool name="AND Gate">
+      <a name="width" val="16"/>
+    </tool>
+    <tool name="Odd Parity">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2">
+    <tool name="Multiplexer">
+      <a name="enable" val="true"/>
+      <a name="width" val="32"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="true"/>
+      <a name="select" val="5"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="3">
+    <tool name="Subtractor">
+      <a name="width" val="16"/>
+    </tool>
+    <tool name="Multiplier">
+      <a name="width" val="1"/>
+    </tool>
+    <tool name="Divider">
+      <a name="width" val="16"/>
+    </tool>
+    <tool name="Negator">
+      <a name="width" val="1"/>
+    </tool>
+    <tool name="Comparator">
+      <a name="width" val="32"/>
+    </tool>
+  </lib>
+  <lib desc="#Memory" name="4">
+    <tool name="Register">
+      <a name="width" val="32"/>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
-  <lib desc="#TTL" name="6"/>
-  <lib desc="#TCL" name="7"/>
-  <lib desc="#Base" name="8"/>
-  <lib desc="#BFH-Praktika" name="9"/>
-  <lib desc="#Input/Output-Extra" name="10"/>
-  <lib desc="#Soc" name="11"/>
-  <main name="immediate_extender"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="Immediate_Extender"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="8" map="Button2" name="Poke Tool"/>
-    <tool lib="8" map="Button3" name="Menu Tool"/>
-    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="8" name="Poke Tool"/>
-    <tool lib="8" name="Edit Tool"/>
-    <tool lib="8" name="Wiring Tool"/>
-    <tool lib="8" name="Text Tool"/>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
-    <sep/>
     <tool lib="1" name="NOT Gate"/>
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
-    <tool lib="1" name="XOR Gate"/>
-    <tool lib="1" name="NAND Gate"/>
-    <tool lib="1" name="NOR Gate"/>
-    <sep/>
-    <tool lib="4" name="D Flip-Flop"/>
-    <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="immediate_extender">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="immediate_extender"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
+  <circuit name="Immediate_Extender">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="Immediate_Extender"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <rect fill="none" height="55" stroke="#000000" width="55" x="50" y="50"/>
-      <circ-anchor facing="east" x="270" y="60"/>
-      <circ-port dir="in" pin="210,240" x="50" y="70"/>
-      <circ-port dir="in" pin="400,140" x="80" y="50"/>
-      <circ-port dir="out" pin="550,250" x="270" y="60"/>
+      <rect fill="none" height="41" stroke="#000000" stroke-width="2" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="69" y="85">Extend</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="67">Imme</text>
+      <circ-anchor facing="east" x="50" y="50"/>
+      <circ-port dir="in" pin="130,100" x="50" y="70"/>
+      <circ-port dir="in" pin="310,50" x="70" y="50"/>
+      <circ-port dir="out" pin="380,100" x="90" y="70"/>
     </appear>
-    <comp lib="0" loc="(210,240)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="Imme_Value"/>
+    <comp lib="0" loc="(130,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="InputT"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(350,200)" name="Bit Extender">
-      <a name="in_width" val="16"/>
-      <a name="out_width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(350,290)" name="Bit Extender">
+    <comp lib="0" loc="(230,120)" name="Bit Extender">
       <a name="in_width" val="16"/>
       <a name="out_width" val="32"/>
       <a name="type" val="zero"/>
     </comp>
-    <comp lib="0" loc="(400,140)" name="Pin">
+    <comp lib="0" loc="(230,80)" name="Bit Extender">
+      <a name="in_width" val="16"/>
+      <a name="out_width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(310,50)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="ZeroExtend"/>
     </comp>
-    <comp lib="0" loc="(550,250)" name="Pin">
+    <comp lib="0" loc="(380,100)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="result"/>
+      <a name="label" val="Output"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="2" loc="(420,250)" name="Multiplexer">
+    <comp lib="2" loc="(330,100)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="32"/>
     </comp>
-    <wire from="(210,240)" to="(230,240)"/>
-    <wire from="(230,200)" to="(230,240)"/>
-    <wire from="(230,200)" to="(310,200)"/>
-    <wire from="(230,240)" to="(230,290)"/>
-    <wire from="(230,290)" to="(310,290)"/>
-    <wire from="(350,200)" to="(370,200)"/>
-    <wire from="(350,290)" to="(370,290)"/>
-    <wire from="(370,200)" to="(370,240)"/>
-    <wire from="(370,240)" to="(390,240)"/>
-    <wire from="(370,260)" to="(370,290)"/>
-    <wire from="(370,260)" to="(390,260)"/>
-    <wire from="(400,140)" to="(400,230)"/>
-    <wire from="(420,250)" to="(550,250)"/>
+    <wire from="(130,100)" to="(160,100)"/>
+    <wire from="(160,100)" to="(160,120)"/>
+    <wire from="(160,120)" to="(190,120)"/>
+    <wire from="(160,80)" to="(160,100)"/>
+    <wire from="(160,80)" to="(190,80)"/>
+    <wire from="(230,120)" to="(240,120)"/>
+    <wire from="(230,80)" to="(240,80)"/>
+    <wire from="(240,110)" to="(240,120)"/>
+    <wire from="(240,110)" to="(300,110)"/>
+    <wire from="(240,80)" to="(240,90)"/>
+    <wire from="(240,90)" to="(300,90)"/>
+    <wire from="(310,50)" to="(310,80)"/>
+    <wire from="(330,100)" to="(380,100)"/>
   </circuit>
 </project>

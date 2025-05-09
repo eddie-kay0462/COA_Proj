@@ -113,6 +113,30 @@
       <a name="label" val="IsRet"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(520,2050)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clk"/>
+    </comp>
+    <comp lib="0" loc="(600,2110)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="HasExp"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(660,2090)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="ExRegWrite"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(700,2130)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsRet"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(750,2100)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsRet"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(80,1730)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="IsCOP0"/>
@@ -178,6 +202,11 @@
     <wire from="(290,1660)" to="(290,1670)"/>
     <wire from="(40,1690)" to="(40,1700)"/>
     <wire from="(40,1690)" to="(80,1690)"/>
+    <wire from="(520,2050)" to="(570,2050)"/>
+    <wire from="(600,2080)" to="(600,2110)"/>
+    <wire from="(660,2080)" to="(660,2090)"/>
+    <wire from="(700,2080)" to="(700,2130)"/>
+    <wire from="(750,2080)" to="(750,2100)"/>
     <wire from="(80,1680)" to="(80,1690)"/>
     <wire from="(80,1710)" to="(100,1710)"/>
     <wire from="(80,1710)" to="(80,1730)"/>

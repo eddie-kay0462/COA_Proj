@@ -132,6 +132,11 @@
       <a name="label" val="IsRet"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(750,2100)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsRet"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(80,1730)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="IsCOP0"/>
@@ -163,6 +168,14 @@
     <comp lib="2" loc="(190,1510)" name="Multiplexer"/>
     <comp lib="2" loc="(280,1580)" name="Multiplexer">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="2" loc="(830,2000)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="2" loc="(890,2120)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(290,1510)" name="Register">
       <a name="appearance" val="classic"/>
@@ -201,9 +214,15 @@
     <wire from="(600,2080)" to="(600,2110)"/>
     <wire from="(660,2080)" to="(660,2090)"/>
     <wire from="(700,2080)" to="(700,2130)"/>
+    <wire from="(750,2080)" to="(750,2100)"/>
+    <wire from="(780,2040)" to="(820,2040)"/>
     <wire from="(80,1680)" to="(80,1690)"/>
     <wire from="(80,1710)" to="(100,1710)"/>
     <wire from="(80,1710)" to="(80,1730)"/>
+    <wire from="(820,2030)" to="(820,2040)"/>
+    <wire from="(840,2030)" to="(840,2080)"/>
+    <wire from="(840,2080)" to="(890,2080)"/>
+    <wire from="(890,2080)" to="(890,2120)"/>
     <wire from="(90,1560)" to="(90,1610)"/>
     <wire from="(90,1610)" to="(190,1610)"/>
     <wire from="(90,1610)" to="(90,1650)"/>

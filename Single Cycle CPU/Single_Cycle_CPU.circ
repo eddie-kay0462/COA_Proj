@@ -117,7 +117,7 @@
       <a name="label" val="IsRet"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(540,2300)" name="Tunnel">
+    <comp lib="0" loc="(520,2270)" name="Tunnel">
       <a name="label" val="Halt"/>
     </comp>
     <comp lib="0" loc="(560,2570)" name="Tunnel">
@@ -125,9 +125,17 @@
       <a name="label" val="HasExp"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(570,2330)" name="Tunnel">
+      <a name="label" val="ExpSrc0"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(620,2550)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="ExRegWrite"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(650,2330)" name="Tunnel">
+      <a name="label" val="ExpSrc1"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(660,2590)" name="Tunnel">
@@ -141,7 +149,7 @@
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(730,2350)" name="Tunnel">
-      <a name="label" val="IsCOP0"/>
+      <a name="label" val="ExpSrc2"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(760,2600)" name="Tunnel">
@@ -236,9 +244,15 @@
     <wire from="(480,2510)" to="(530,2510)"/>
     <wire from="(50,2080)" to="(50,2090)"/>
     <wire from="(50,2080)" to="(90,2080)"/>
+    <wire from="(560,2330)" to="(560,2360)"/>
+    <wire from="(560,2330)" to="(570,2330)"/>
     <wire from="(560,2540)" to="(560,2570)"/>
     <wire from="(620,2540)" to="(620,2550)"/>
+    <wire from="(640,2330)" to="(640,2360)"/>
+    <wire from="(640,2330)" to="(650,2330)"/>
     <wire from="(660,2540)" to="(660,2590)"/>
+    <wire from="(700,2350)" to="(700,2360)"/>
+    <wire from="(700,2350)" to="(730,2350)"/>
     <wire from="(710,2540)" to="(710,2560)"/>
     <wire from="(740,2390)" to="(770,2390)"/>
     <wire from="(740,2500)" to="(780,2500)"/>

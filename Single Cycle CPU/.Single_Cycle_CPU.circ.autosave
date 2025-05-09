@@ -207,6 +207,10 @@
       <a name="label" val="Halt"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(2360,1120)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="5"/>
+    </comp>
     <comp lib="0" loc="(2360,1740)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="MemWrite"/>
@@ -296,7 +300,7 @@
       <a name="size" val="20"/>
     </comp>
     <comp lib="12" loc="(1650,1990)" name="CP0"/>
-    <comp lib="14" loc="(1640,1070)" name="control_unit"/>
+    <comp lib="14" loc="(1420,980)" name="control_unit"/>
     <comp lib="16" loc="(2130,1380)" name="syscall_decoder"/>
     <comp lib="17" loc="(2120,1610)" name="alu"/>
     <comp lib="2" loc="(1150,1380)" name="Multiplexer">
@@ -341,6 +345,12 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(1390,2080)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(2450,1110)" name="Shifter">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(2550,1100)" name="Adder">
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(1330,1350)" name="Register">
@@ -461,14 +471,17 @@
     <wire from="(2210,1540)" to="(2310,1540)"/>
     <wire from="(2300,1280)" to="(2300,1420)"/>
     <wire from="(2300,1420)" to="(2570,1420)"/>
+    <wire from="(2360,1120)" to="(2410,1120)"/>
     <wire from="(2430,1290)" to="(2430,1340)"/>
     <wire from="(2430,1340)" to="(2530,1340)"/>
+    <wire from="(2450,1110)" to="(2510,1110)"/>
     <wire from="(2470,1290)" to="(2470,1320)"/>
     <wire from="(2470,1320)" to="(2540,1320)"/>
     <wire from="(2510,1290)" to="(2510,1310)"/>
     <wire from="(2510,1310)" to="(2550,1310)"/>
     <wire from="(2530,1340)" to="(2530,1350)"/>
     <wire from="(2540,1320)" to="(2540,1350)"/>
+    <wire from="(2550,1100)" to="(2580,1100)"/>
     <wire from="(2550,1290)" to="(2550,1300)"/>
     <wire from="(2550,1300)" to="(2560,1300)"/>
     <wire from="(2550,1310)" to="(2550,1350)"/>
@@ -477,6 +490,8 @@
     <wire from="(2570,1320)" to="(2570,1350)"/>
     <wire from="(2570,1320)" to="(2590,1320)"/>
     <wire from="(2570,1370)" to="(2570,1420)"/>
+    <wire from="(2580,1100)" to="(2580,1120)"/>
+    <wire from="(2580,1120)" to="(2640,1120)"/>
     <wire from="(2580,1330)" to="(2580,1350)"/>
     <wire from="(2580,1330)" to="(2630,1330)"/>
     <wire from="(2580,1490)" to="(2580,1600)"/>

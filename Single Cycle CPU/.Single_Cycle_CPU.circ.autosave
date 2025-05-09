@@ -8,7 +8,6 @@
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
       <a name="appearance" val="classic"/>
@@ -44,6 +43,7 @@
   <lib desc="file#..\Control Unit\Control_Unit.circ" name="14"/>
   <lib desc="file#..\Register File\RegFile.circ" name="15"/>
   <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="16"/>
+  <lib desc="file#..\ALU\ALU.circ" name="17"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>

@@ -207,6 +207,7 @@
     </comp>
     <comp lib="12" loc="(790,2560)" name="CP0"/>
     <comp lib="14" loc="(690,100)" name="control_unit"/>
+    <comp lib="17" loc="(1310,2050)" name="alu"/>
     <comp lib="2" loc="(1070,2610)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="32"/>

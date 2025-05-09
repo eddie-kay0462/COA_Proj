@@ -156,8 +156,16 @@
       <a name="label" val="IsRet"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1710,1140)" name="Tunnel">
+      <a name="label" val="IsShamt"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1710,1910)" name="Tunnel">
       <a name="label" val="IsCOP0"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1730,1010)" name="Tunnel">
+      <a name="label" val="RegDst"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1730,740)" name="Tunnel">
@@ -168,12 +176,24 @@
       <a name="label" val="isJR"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1740,1070)" name="Tunnel">
+      <a name="label" val="IsSyscall"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1750,1030)" name="Tunnel">
+      <a name="label" val="ALUSrc"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(1750,770)" name="Tunnel">
       <a name="label" val="RegWrite"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1750,810)" name="Tunnel">
       <a name="label" val="MemtoReg"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1750,930)" name="Tunnel">
+      <a name="label" val="Jump"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1760,1800)" name="Tunnel">
@@ -187,6 +207,14 @@
     </comp>
     <comp lib="0" loc="(1760,880)" name="Tunnel">
       <a name="label" val="MemRead"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1770,960)" name="Tunnel">
+      <a name="label" val="Branch"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1790,990)" name="Tunnel">
+      <a name="label" val="BneOrBeq"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1800,1840)" name="Tunnel">
@@ -532,6 +560,10 @@
     <wire from="(1590,1990)" to="(1590,2020)"/>
     <wire from="(1650,1990)" to="(1650,2000)"/>
     <wire from="(1670,1800)" to="(1670,1810)"/>
+    <wire from="(1690,1020)" to="(1720,1020)"/>
+    <wire from="(1690,1050)" to="(1730,1050)"/>
+    <wire from="(1690,1090)" to="(1700,1090)"/>
+    <wire from="(1690,1170)" to="(1700,1170)"/>
     <wire from="(1690,1990)" to="(1690,2040)"/>
     <wire from="(1690,2040)" to="(1700,2040)"/>
     <wire from="(1690,770)" to="(1720,770)"/>
@@ -541,13 +573,24 @@
     <wire from="(1690,860)" to="(1810,860)"/>
     <wire from="(1690,880)" to="(1760,880)"/>
     <wire from="(1690,910)" to="(1710,910)"/>
+    <wire from="(1690,930)" to="(1750,930)"/>
+    <wire from="(1690,960)" to="(1770,960)"/>
+    <wire from="(1690,990)" to="(1790,990)"/>
+    <wire from="(1700,1070)" to="(1700,1090)"/>
+    <wire from="(1700,1070)" to="(1740,1070)"/>
+    <wire from="(1700,1140)" to="(1700,1170)"/>
+    <wire from="(1700,1140)" to="(1710,1140)"/>
     <wire from="(1700,2040)" to="(1700,2050)"/>
     <wire from="(1710,900)" to="(1710,910)"/>
     <wire from="(1710,900)" to="(1730,900)"/>
+    <wire from="(1720,1010)" to="(1720,1020)"/>
+    <wire from="(1720,1010)" to="(1730,1010)"/>
     <wire from="(1720,740)" to="(1720,770)"/>
     <wire from="(1720,740)" to="(1730,740)"/>
     <wire from="(1720,780)" to="(1720,790)"/>
     <wire from="(1720,780)" to="(1740,780)"/>
+    <wire from="(1730,1030)" to="(1730,1050)"/>
+    <wire from="(1730,1030)" to="(1750,1030)"/>
     <wire from="(1730,1800)" to="(1730,1810)"/>
     <wire from="(1730,1800)" to="(1760,1800)"/>
     <wire from="(1740,1990)" to="(1740,2010)"/>

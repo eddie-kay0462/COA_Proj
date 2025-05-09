@@ -1076,9 +1076,8 @@
     <comp lib="3" loc="(3090,890)" name="Adder">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(1050,760)" name="Register">
+    <comp lib="4" loc="(1050,760)" name="Counter">
       <a name="appearance" val="classic"/>
-      <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(1470,1870)" name="Register">
       <a name="appearance" val="classic"/>
@@ -1096,9 +1095,8 @@
     <comp lib="4" loc="(750,990)" name="Counter">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp lib="4" loc="(900,810)" name="Register">
+    <comp lib="4" loc="(900,810)" name="Counter">
       <a name="appearance" val="classic"/>
-      <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(940,1110)" name="ROM">
       <a name="addrWidth" val="9"/>
@@ -1116,9 +1114,8 @@
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
-    <comp lib="4" loc="(980,780)" name="Register">
+    <comp lib="4" loc="(980,780)" name="Counter">
       <a name="appearance" val="classic"/>
-      <a name="width" val="32"/>
     </comp>
     <comp lib="5" loc="(2580,1830)" name="Button">
       <a name="facing" val="south"/>
@@ -1161,7 +1158,7 @@
       <a name="bg" val="#000000"/>
       <a name="color" val="#23f025"/>
     </comp>
-    <comp lib="8" loc="(1025,920)" name="Text">
+    <comp lib="8" loc="(1056,958)" name="Text">
       <a name="text" val="R"/>
     </comp>
     <comp lib="8" loc="(1450,1835)" name="Text">
@@ -1176,11 +1173,11 @@
     <comp lib="8" loc="(730,960)" name="Text">
       <a name="text" val="Cycles"/>
     </comp>
-    <comp lib="8" loc="(905,930)" name="Text">
-      <a name="text" val="J"/>
-    </comp>
     <comp lib="8" loc="(925,920)" name="Text">
       <a name="text" val="R"/>
+    </comp>
+    <comp lib="8" loc="(932,969)" name="Text">
+      <a name="text" val="J"/>
     </comp>
     <wire from="(1000,780)" to="(1000,840)"/>
     <wire from="(1010,770)" to="(1010,840)"/>

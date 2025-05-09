@@ -110,20 +110,25 @@
       <a name="facing" val="north"/>
       <a name="selloc" val="tr"/>
     </comp>
-    <comp lib="2" loc="(250,1490)" name="Multiplexer"/>
+    <comp lib="2" loc="(190,1510)" name="Multiplexer"/>
     <comp lib="2" loc="(280,1580)" name="Multiplexer">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="4" loc="(130,1550)" name="Register">
+    <comp lib="4" loc="(290,1510)" name="Register">
       <a name="appearance" val="classic"/>
+      <a name="width" val="16"/>
     </comp>
     <wire from="(130,1830)" to="(130,1920)"/>
     <wire from="(140,1750)" to="(140,1800)"/>
     <wire from="(150,1830)" to="(150,1880)"/>
     <wire from="(160,1820)" to="(190,1820)"/>
+    <wire from="(190,1510)" to="(260,1510)"/>
+    <wire from="(270,1530)" to="(270,1550)"/>
+    <wire from="(270,1550)" to="(280,1550)"/>
     <wire from="(270,1610)" to="(270,1670)"/>
     <wire from="(270,1670)" to="(270,1680)"/>
     <wire from="(270,1670)" to="(290,1670)"/>
+    <wire from="(280,1550)" to="(280,1580)"/>
     <wire from="(290,1610)" to="(290,1630)"/>
     <wire from="(290,1660)" to="(290,1670)"/>
   </circuit>

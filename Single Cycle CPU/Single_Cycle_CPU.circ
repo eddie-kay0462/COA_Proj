@@ -73,14 +73,18 @@
     </tool>
   </lib>
   <lib desc="#I/O" name="5"/>
-  <lib desc="#Base" name="6"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
   <lib desc="file#..\..\circs\circs\alu.circ" name="7"/>
-  <lib desc="file#..\..\circs\circs\syscall_decoder.circ" name="8"/>
-  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="9"/>
-  <lib desc="file#..\..\Regfile.circ" name="10"/>
-  <lib desc="file#..\CPO\CP0.circ" name="11"/>
-  <lib desc="file#..\..\circs\circs\control.circ" name="12"/>
-  <lib desc="file#..\..\Instruction_Statistics.circ" name="13"/>
+  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="8"/>
+  <lib desc="file#..\..\Regfile.circ" name="9"/>
+  <lib desc="file#..\CPO\CP0.circ" name="10"/>
+  <lib desc="file#..\..\circs\circs\control.circ" name="11"/>
+  <lib desc="file#..\..\Instruction_Statistics.circ" name="12"/>
+  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="13"/>
   <main name="Single_Cycle_CPU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -95,7 +99,9 @@
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
     <tool lib="6" name="Edit Tool"/>
-    <tool lib="6" name="Text Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
@@ -111,7 +117,7 @@
     <a name="circuit" val="Single_Cycle_CPU"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1060,310)" name="Tunnel">
+    <comp lib="0" loc="(1030,310)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="clk"/>
     </comp>
@@ -964,10 +970,10 @@
     <comp lib="1" loc="(860,930)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="10" loc="(780,480)" name="RegFile"/>
-    <comp lib="11" loc="(660,950)" name="CP0"/>
-    <comp lib="12" loc="(620,140)" name="Control"/>
-    <comp lib="13" loc="(510,180)" name="Instruction_Statistics"/>
+    <comp lib="10" loc="(660,950)" name="CP0"/>
+    <comp lib="11" loc="(620,140)" name="Control"/>
+    <comp lib="12" loc="(510,180)" name="Instruction_Statistics"/>
+    <comp lib="13" loc="(1010,330)" name="Syscall_Decoder"/>
     <comp lib="2" loc="(1120,560)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -1232,15 +1238,25 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
       <a name="text" val="Screen"/>
     </comp>
     <comp lib="7" loc="(1220,510)" name="alu"/>
-    <comp lib="8" loc="(1040,320)" name="Syscall_Decoder"/>
-    <comp lib="9" loc="(660,700)" name="Immediate_Extender"/>
-    <wire from="(1060,310)" to="(1060,320)"/>
+    <comp lib="8" loc="(660,700)" name="Immediate_Extender"/>
+    <comp lib="9" loc="(780,480)" name="RegFile"/>
+    <wire from="(1000,330)" to="(1000,350)"/>
+    <wire from="(1000,350)" to="(1010,350)"/>
+    <wire from="(1000,370)" to="(1000,380)"/>
+    <wire from="(1000,380)" to="(1010,380)"/>
+    <wire from="(1030,310)" to="(1030,330)"/>
+    <wire from="(1060,320)" to="(1060,330)"/>
+    <wire from="(1060,320)" to="(1080,320)"/>
     <wire from="(1060,790)" to="(1130,790)"/>
     <wire from="(1080,310)" to="(1080,320)"/>
     <wire from="(1080,310)" to="(1090,310)"/>
-    <wire from="(1100,340)" to="(1210,340)"/>
+    <wire from="(1090,350)" to="(1110,350)"/>
+    <wire from="(1090,380)" to="(1100,380)"/>
+    <wire from="(1100,370)" to="(1100,380)"/>
     <wire from="(1100,370)" to="(1120,370)"/>
     <wire from="(1100,580)" to="(1100,590)"/>
+    <wire from="(1110,340)" to="(1110,350)"/>
+    <wire from="(1110,340)" to="(1210,340)"/>
     <wire from="(1120,160)" to="(1140,160)"/>
     <wire from="(1120,220)" to="(1140,220)"/>
     <wire from="(1120,240)" to="(1140,240)"/>
@@ -1559,11 +1575,11 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
     <wire from="(900,570)" to="(900,720)"/>
     <wire from="(930,260)" to="(1570,260)"/>
     <wire from="(930,260)" to="(930,340)"/>
-    <wire from="(930,340)" to="(1040,340)"/>
     <wire from="(930,340)" to="(930,480)"/>
+    <wire from="(930,340)" to="(990,340)"/>
     <wire from="(930,480)" to="(1140,480)"/>
     <wire from="(930,480)" to="(930,530)"/>
-    <wire from="(950,370)" to="(1040,370)"/>
+    <wire from="(950,370)" to="(1000,370)"/>
     <wire from="(950,370)" to="(950,500)"/>
     <wire from="(950,500)" to="(1140,500)"/>
     <wire from="(950,500)" to="(950,550)"/>
@@ -1571,5 +1587,7 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
     <wire from="(950,550)" to="(950,660)"/>
     <wire from="(950,660)" to="(1320,660)"/>
     <wire from="(950,660)" to="(950,900)"/>
+    <wire from="(990,330)" to="(1000,330)"/>
+    <wire from="(990,330)" to="(990,340)"/>
   </circuit>
 </project>

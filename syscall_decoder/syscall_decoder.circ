@@ -111,7 +111,7 @@
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <rect fill="#10c0ff" height="67" stroke="none" width="83" x="270" y="281"/>
+      <rect fill="#10c0ff" height="69" stroke="none" width="81" x="270" y="279"/>
       <text dominant-baseline="central" fill="#fafcff" font-family="SansSerif" font-size="14" text-anchor="middle" x="316" y="306">Syscall</text>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="14" text-anchor="middle" x="319" y="321">Decoder</text>
       <circ-anchor facing="east" x="270" y="280"/>

@@ -144,33 +144,29 @@
       <a name="label" val="ExpSrc1"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(830,2610)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="IsRet"/>
-      <a name="labelfont" val="SansSerif bold 11"/>
-    </comp>
     <comp lib="0" loc="(850,2480)" name="Tunnel">
       <a name="label" val="IsCOP0"/>
-      <a name="labelfont" val="SansSerif bold 11"/>
-    </comp>
-    <comp lib="0" loc="(880,2580)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="IsRet"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(900,2370)" name="Tunnel">
       <a name="label" val="ExpSrc2"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(930,2620)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="isJAL"/>
+    <comp lib="0" loc="(900,2590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="ExpBlock"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(940,2410)" name="Tunnel">
       <a name="label" val="IsCOP0"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(980,2630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="isJAL"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="1" loc="(1030,2630)" name="NOT Gate"/>
     <comp lib="1" loc="(270,2060)" name="AND Gate">
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
@@ -185,7 +181,6 @@
     <comp lib="1" loc="(470,2040)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="1" loc="(980,2620)" name="NOT Gate"/>
     <comp lib="12" loc="(790,2560)" name="CP0"/>
     <comp lib="14" loc="(690,100)" name="control_unit"/>
     <comp lib="2" loc="(290,1950)" name="Multiplexer">
@@ -215,6 +210,7 @@
     <wire from="(1010,2570)" to="(1010,2600)"/>
     <wire from="(1010,2600)" to="(1020,2600)"/>
     <wire from="(1020,2560)" to="(1020,2600)"/>
+    <wire from="(1030,2630)" to="(1050,2630)"/>
     <wire from="(180,1960)" to="(180,2480)"/>
     <wire from="(180,1960)" to="(260,1960)"/>
     <wire from="(180,2480)" to="(700,2480)"/>
@@ -264,13 +260,14 @@
     <wire from="(870,2370)" to="(870,2380)"/>
     <wire from="(870,2370)" to="(900,2370)"/>
     <wire from="(880,2560)" to="(880,2580)"/>
+    <wire from="(880,2580)" to="(900,2580)"/>
+    <wire from="(900,2580)" to="(900,2590)"/>
     <wire from="(910,2410)" to="(940,2410)"/>
     <wire from="(910,2520)" to="(950,2520)"/>
-    <wire from="(930,2620)" to="(950,2620)"/>
     <wire from="(950,2510)" to="(950,2520)"/>
     <wire from="(970,2510)" to="(970,2560)"/>
     <wire from="(970,2560)" to="(1020,2560)"/>
     <wire from="(980,2500)" to="(1020,2500)"/>
-    <wire from="(980,2620)" to="(1000,2620)"/>
+    <wire from="(980,2630)" to="(1000,2630)"/>
   </circuit>
 </project>

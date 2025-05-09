@@ -596,8 +596,12 @@
       <a name="label" val="isJAL"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1970,1280)" name="Constant">
+      <a name="value" val="0x2"/>
+      <a name="width" val="5"/>
+    </comp>
     <comp lib="0" loc="(2070,1240)" name="Constant">
-      <a name="value" val="0x0"/>
+      <a name="value" val="0x2"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(2110,1130)" name="Tunnel">
@@ -1379,6 +1383,7 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
     <wire from="(1940,2130)" to="(2800,2130)"/>
     <wire from="(1950,1510)" to="(1950,1530)"/>
     <wire from="(1960,1340)" to="(1960,1380)"/>
+    <wire from="(1970,1280)" to="(2000,1280)"/>
     <wire from="(1980,1320)" to="(2130,1320)"/>
     <wire from="(2020,1290)" to="(2150,1290)"/>
     <wire from="(2040,1270)" to="(2170,1270)"/>
@@ -1421,12 +1426,11 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
     <wire from="(2370,1070)" to="(2490,1070)"/>
     <wire from="(2370,1270)" to="(2570,1270)"/>
     <wire from="(2370,1310)" to="(2370,1330)"/>
-    <wire from="(2370,1310)" to="(2430,1310)"/>
+    <wire from="(2370,1310)" to="(2580,1310)"/>
     <wire from="(2370,1330)" to="(2430,1330)"/>
     <wire from="(2390,1740)" to="(2480,1740)"/>
-    <wire from="(2430,1160)" to="(2430,1310)"/>
+    <wire from="(2430,1160)" to="(2430,1330)"/>
     <wire from="(2430,1160)" to="(2500,1160)"/>
-    <wire from="(2430,1310)" to="(2580,1310)"/>
     <wire from="(2430,1330)" to="(2430,1360)"/>
     <wire from="(2430,1360)" to="(2430,1610)"/>
     <wire from="(2430,1360)" to="(2480,1360)"/>

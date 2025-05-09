@@ -122,6 +122,10 @@
       <a name="label" val="MemWrite"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1970,1750)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clk"/>
+    </comp>
     <comp lib="0" loc="(2020,1780)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="MemRead"/>
@@ -129,7 +133,7 @@
     </comp>
     <comp lib="0" loc="(2200,1700)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="IsCOP0"/>
+      <a name="label" val="MemtoReg"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(360,1630)" name="Tunnel">
@@ -308,9 +312,10 @@
     <wire from="(1670,1490)" to="(1690,1490)"/>
     <wire from="(1690,1530)" to="(1690,1550)"/>
     <wire from="(1690,1530)" to="(1710,1530)"/>
-    <wire from="(1710,1580)" to="(1870,1580)"/>
-    <wire from="(1830,1530)" to="(1830,1570)"/>
-    <wire from="(1830,1530)" to="(2140,1530)"/>
+    <wire from="(1710,1580)" to="(1770,1580)"/>
+    <wire from="(1770,1530)" to="(1770,1580)"/>
+    <wire from="(1770,1530)" to="(2140,1530)"/>
+    <wire from="(1770,1580)" to="(1870,1580)"/>
     <wire from="(2110,1660)" to="(2190,1660)"/>
     <wire from="(2140,1530)" to="(2140,1640)"/>
     <wire from="(2140,1640)" to="(2190,1640)"/>

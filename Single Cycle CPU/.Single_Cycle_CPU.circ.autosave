@@ -104,7 +104,7 @@
       <a name="label" val="IsCOP0"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(1630,1590)" name="Tunnel">
+    <comp lib="0" loc="(1620,1590)" name="Tunnel">
       <a name="label" val="IsShamt"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
@@ -116,6 +116,13 @@
       <a name="label" val="ALUOp"/>
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1720,1400)" name="Tunnel">
+      <a name="label" val="Halt"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1900,1420)" name="Splitter">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(1920,1780)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -234,6 +241,7 @@
     </comp>
     <comp lib="12" loc="(930,2080)" name="CP0"/>
     <comp lib="14" loc="(690,100)" name="control_unit"/>
+    <comp lib="16" loc="(1690,1400)" name="syscall_decoder"/>
     <comp lib="17" loc="(1680,1650)" name="alu"/>
     <comp lib="2" loc="(1100,2000)" name="Multiplexer">
       <a name="facing" val="north"/>
@@ -305,16 +313,18 @@
     <wire from="(1220,2220)" to="(2360,2220)"/>
     <wire from="(1610,1570)" to="(1610,1590)"/>
     <wire from="(1610,1590)" to="(1610,1630)"/>
-    <wire from="(1610,1590)" to="(1630,1590)"/>
+    <wire from="(1610,1590)" to="(1620,1590)"/>
     <wire from="(1630,1550)" to="(1660,1550)"/>
     <wire from="(1630,1650)" to="(1660,1650)"/>
     <wire from="(1670,1490)" to="(1670,1540)"/>
     <wire from="(1670,1490)" to="(1690,1490)"/>
+    <wire from="(1690,1400)" to="(1720,1400)"/>
     <wire from="(1690,1530)" to="(1690,1550)"/>
     <wire from="(1690,1530)" to="(1710,1530)"/>
-    <wire from="(1830,1530)" to="(1830,1580)"/>
-    <wire from="(1830,1530)" to="(2140,1530)"/>
-    <wire from="(1830,1580)" to="(1870,1580)"/>
+    <wire from="(1710,1580)" to="(1770,1580)"/>
+    <wire from="(1770,1530)" to="(1770,1580)"/>
+    <wire from="(1770,1530)" to="(2140,1530)"/>
+    <wire from="(1770,1580)" to="(1870,1580)"/>
     <wire from="(2110,1660)" to="(2190,1660)"/>
     <wire from="(2140,1530)" to="(2140,1640)"/>
     <wire from="(2140,1640)" to="(2190,1640)"/>

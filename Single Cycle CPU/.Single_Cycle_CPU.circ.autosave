@@ -127,6 +127,12 @@
       <a name="label" val="HasExp"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(1470,890)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
     <comp lib="0" loc="(1510,1960)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Clk"/>

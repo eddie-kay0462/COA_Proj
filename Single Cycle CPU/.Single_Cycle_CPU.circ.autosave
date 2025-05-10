@@ -74,13 +74,13 @@
   </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6"/>
-  <lib desc="file#..\..\circs\circs\alu.circ" name="7"/>
-  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="8"/>
-  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="9"/>
-  <lib desc="file#..\Control Unit\control.circ" name="10"/>
-  <lib desc="file#..\CPO\CP0.circ" name="11"/>
-  <lib desc="file#..\..\Instruction_Statistics.circ" name="12"/>
-  <lib desc="file#..\Register File\regfile.circ" name="13"/>
+  <lib desc="file#..\Register File\Regfile.circ" name="7"/>
+  <lib desc="file#..\..\circs\circs\immediate_extender.circ" name="8"/>
+  <lib desc="file#..\syscall_decoder\syscall_decoder.circ" name="9"/>
+  <lib desc="file#..\..\Instruction_Statistics.circ" name="10"/>
+  <lib desc="file#..\Control Unit\control.circ" name="11"/>
+  <lib desc="file#..\CPO\CP0.circ" name="12"/>
+  <lib desc="file#..\..\circs\circs\alu.circ" name="13"/>
   <main name="Single_Cycle_CPU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -964,10 +964,10 @@
     <comp lib="1" loc="(860,930)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="10" loc="(900,250)" name="Control"/>
-    <comp lib="11" loc="(660,950)" name="CP0"/>
-    <comp lib="12" loc="(510,180)" name="Instruction_Statistics"/>
-    <comp lib="13" loc="(780,480)" name="RegFile"/>
+    <comp lib="10" loc="(510,180)" name="Instruction_Statistics"/>
+    <comp lib="11" loc="(900,250)" name="Control"/>
+    <comp lib="12" loc="(660,950)" name="CP0"/>
+    <comp lib="13" loc="(1220,510)" name="alu"/>
     <comp lib="2" loc="(1120,560)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -1190,9 +1190,9 @@ c 2011ffff 118c00 2020 24840064 2484ff9c 14800017 2020
     <comp lib="6" loc="(1380,250)" name="Text">
       <a name="text" val="Screen"/>
     </comp>
-    <comp lib="7" loc="(1220,510)" name="alu"/>
-    <comp lib="8" loc="(1010,330)" name="Syscall_Decoder"/>
-    <comp lib="9" loc="(660,700)" name="Immediate_Extender"/>
+    <comp lib="7" loc="(780,480)" name="RegFile"/>
+    <comp lib="8" loc="(660,700)" name="Immediate_Extender"/>
+    <comp lib="9" loc="(1010,330)" name="Syscall_Decoder"/>
     <wire from="(1000,330)" to="(1000,350)"/>
     <wire from="(1000,350)" to="(1010,350)"/>
     <wire from="(1000,370)" to="(1000,380)"/>

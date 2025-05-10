@@ -965,7 +965,6 @@
       <a name="facing" val="west"/>
     </comp>
     <comp lib="10" loc="(1220,510)" name="alu"/>
-    <comp lib="11" loc="(780,480)" name="RegFile"/>
     <comp lib="12" loc="(1010,330)" name="Syscall_Decoder"/>
     <comp lib="13" loc="(510,180)" name="Instruction_Statistics"/>
     <comp lib="2" loc="(1120,560)" name="Multiplexer">
